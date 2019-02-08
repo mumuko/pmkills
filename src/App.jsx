@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 import GoogleMapReact from 'google-map-react'
 import { fitBounds } from 'google-map-react/utils'
+import { geolocated } from 'react-geolocated'
 
 const Container = styled.div`
   display: flex;
@@ -387,4 +388,4 @@ class App extends Component {
   }
 }
 
-export default App
+export default geolocated()(App)
